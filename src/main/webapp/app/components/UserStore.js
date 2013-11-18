@@ -1,6 +1,6 @@
-Ext.define('Dst.components.UserStore', {
+Ext.define('Keyhole.components.UserStore', {
 	    extend: 'Ext.data.Store', 
-	    model: 'Dst.components.User',
+	    model: 'Keyhole.components.User',
 	    proxy: {
 			type: 'ajax',
 			url : 'data/users.json',

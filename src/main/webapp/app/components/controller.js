@@ -1,14 +1,14 @@
-Ext.define( 'Dst.components.controller' , {
+Ext.define( 'Keyhole.components.controller' , {
 	extend: 'Ext.app.Controller' ,
 	
 	stores:[
-	    'Dst.components.UserStore'
+	    'Keyhole.components.UserStore'
 	],
 	views: [
-	    'Dst.components.view'
+	    'Keyhole.components.view'
 	],
 	requires: [
-	    'Dst.components.formController'
+	    'Keyhole.components.formController'
 	],
 	refs: [
 		{ 
@@ -24,22 +24,22 @@ Ext.define( 'Dst.components.controller' , {
 	grid: undefined,
 	
 	init: function () {
-		var store = this.getStore( 'Dst.components.UserStore' );
-		var Grid = this.getView( 'Dst.components.view' );
+		var store = this.getStore( 'Keyhole.components.UserStore' );
+		var Grid = this.getView( 'Keyhole.components.view' );
 		this.grid = Ext.create(Grid);
 		this.addComponent(this.grid);
 		this.getAddButton().on( 'click' ,this.add, this );
 		this.getEditButton().on( 'click' ,this.edit, this );
 	},
 	add: function (button) {
-		var controller = this.application.getController('Dst.components.formController');
+		var controller = this.application.getController('Keyhole.components.formController');
 		controller.show();
 		
 		this.application.on('FORM_CONTROLLER_ADD', this.onFormControllerAdd, this);
 		this.application.on('FORM_CONTROLLER_CLOSED', this.onFormControllerClosed, this);
 	},
 	edit: function (button) {
-		var controller = this.application.getController('Dst.components.formController');
+		var controller = this.application.getController('Keyhole.components.formController');
 		var data = this.getSelectedRecord().getData();
 		controller.show(data);
 		

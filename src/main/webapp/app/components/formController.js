@@ -1,17 +1,17 @@
 
-Ext.define('Dst.components.formController', {
+Ext.define('Keyhole.components.formController', {
 	extend: 'Ext.app.Controller',
     alias: 'wdiget.edit',
 	
-    views: ['Dst.components.formView'],
-    models: ['Dst.components.User'],
+    views: ['Keyhole.components.formView'],
+    models: ['Keyhole.components.User'],
     
     view: undefined,
     values: undefined,
     
       show: function(values) {
 		
-	    var Form = this.getView('Dst.components.formView');
+	    var Form = this.getView('Keyhole.components.formView');
 	    this.view = Ext.create(Form);
 	    this.view.show();
 	    

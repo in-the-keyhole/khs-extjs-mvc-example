@@ -24,7 +24,7 @@ Ext.onReady(function() {
 	    	  },
 	    	  
 	          statics: {	         		
-	                helpDeskEmail: function() {return 'help@dst.com';}	
+	                helpDeskEmail: function() {return 'help@keyholesoftware.com';}	
 	    	  },
 
 	    	  mixins: {

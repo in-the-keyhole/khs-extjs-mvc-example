@@ -1,9 +1,9 @@
 
-Ext.define('Dst.components.view' ,{
+Ext.define('Keyhole.components.view' ,{
 	  extend: 'Ext.grid.Panel',
       alias: 'widget.grid',
 	    store: { 
-	    	 model: 'Dst.components.User',
+	    	 model: 'Keyhole.components.User',
 	         proxy: {
 	            type: 'ajax',
 	            url : 'data/users.json',

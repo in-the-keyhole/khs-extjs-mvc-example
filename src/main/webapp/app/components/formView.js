@@ -1,4 +1,4 @@
- Ext.define('Dst.components.formView', {
+ Ext.define('Keyhole.components.formView', {
     extend: 'Ext.window.Window',
     
     id: 'confirmWindow',

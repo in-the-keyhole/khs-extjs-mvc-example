@@ -1,15 +1,15 @@
 Ext.onReady(function() {
 	Ext.application({
 	    appFolder: 'app',
-		name: 'Dst',
+		name: 'Keyhole',
 		
 		init: function() {
 	     console.log('hello');
 	       
      	},
 		
-		requires: ['Dst.primer.login.model.LoginRequest',
-		           'Dst.primer.login.view.LoginView','Dst.primer.login.controller.LoginController']
+		requires: ['Keyhole.primer.login.model.LoginRequest',
+		           'Keyhole.primer.login.view.LoginView','Keyhole.primer.login.controller.LoginController']
 			
 		,
 		
@@ -19,7 +19,7 @@ Ext.onReady(function() {
 	
 	    launch: function() {
 			// Viewport Controller will need to be from the common project
-			this.loadController('Dst.primer.viewport.MainController');
+			this.loadController('Keyhole.primer.viewport.MainController');
 	    }
 	    
 

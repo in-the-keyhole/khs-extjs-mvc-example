@@ -1,4 +1,4 @@
-Ext.define('Dst.components.User', {
+Ext.define('Keyhole.components.User', {
     extend: 'Ext.data.Model',
     fields: [
         { name: 'id', type: 'int' },
