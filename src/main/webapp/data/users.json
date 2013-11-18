@@ -1,0 +1,9 @@
+{
+    success: true,
+    users: [
+        { id: 1, name: 'Clifford Squidlow', email: 'dpitt@gmail', phone: '(913) 123-4567' },
+        { id: 2, name: 'Jane Doe', email: 'jdoe@gmail', phone: '(816) 222-3333' },
+        { id: 3, name: 'Dude Lebowski', email: 'dlebowski@gmail', phone: '(785) 222-5555' }
+       
+    ]
+}
